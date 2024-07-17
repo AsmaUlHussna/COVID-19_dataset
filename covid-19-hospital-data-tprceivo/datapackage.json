@@ -1,0 +1,119 @@
+{
+  "accrual_periodicity": "daily",
+  "additional_limitations": "",
+  "citation": "",
+  "contact_email": "opendata@cdph.ca.gov",
+  "data_collection_tool": "",
+  "data_license": "Terms of Use",
+  "de_identification_method": "",
+  "description": "\r\n\r\nData is from the California COVID-19 State Dashboard at https://covid19.ca.gov/state-dashboard/\r\n\r\n__Note:__ Hospitalization counts include all patients diagnosed with COVID-19 during their stay. This does not necessarily mean they were hospitalized because of COVID-19 complications or that they experienced COVID-19 symptoms.\r\n\r\n__Note:__ Cumulative totals are not available due to the fact that hospitals report the total number of patients each day (as opposed to new patients).",
+  "geo_coverage": "California",
+  "geographic_granularity": "county",
+  "keywords": [
+    "COVID",
+    "COVID-19",
+    "COVID19",
+    "Hospitalizations"
+  ],
+  "limitations": "Limitations",
+  "name": "covid-19-hospital-data",
+  "program_web_page": "https://www.calhospital.org/coronavirus",
+  "related_resources": "",
+  "resources": [
+    {
+      "description": "Statewide Covid-19 Hospital County Data",
+      "format": "CSV",
+      "hash": "e5d7f8dc7c925eed674bbedce34957e7",
+      "name": "statewide-covid-19-hospital-county-data",
+      "path": "statewide-covid-19-hospital-county-data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "county",
+            "type": "string"
+          },
+          {
+            "name": "todays_date",
+            "type": "string"
+          },
+          {
+            "name": "hospitalized_covid_confirmed_patients",
+            "type": "string"
+          },
+          {
+            "name": "hospitalized_suspected_covid_patients",
+            "type": "string"
+          },
+          {
+            "name": "hospitalized_covid_patients",
+            "type": "string"
+          },
+          {
+            "name": "all_hospital_beds",
+            "type": "string"
+          },
+          {
+            "name": "icu_covid_confirmed_patients",
+            "type": "string"
+          },
+          {
+            "name": "icu_suspected_covid_patients",
+            "type": "string"
+          },
+          {
+            "name": "icu_available_beds",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/2df3e19e-9ee4-42a6-a087-9761f82033f6/resource/47af979d-8685-4981-bced-96a6b79d3ed5/download/covid19hospitalbycounty.csv",
+          "title": "Statewide Covid-19 Hospital County Data"
+        }
+      ],
+      "title": "Statewide Covid-19 Hospital County Data"
+    },
+    {
+      "format": "XLSX",
+      "hash": "16e0b7fbc002486f75e336be42ec4e3c",
+      "name": "covid-19-hospitalizations-by-county-data-dictionary",
+      "path": "covid-19-hospitalizations-by-county-data-dictionary.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "name": "column",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "name": "label",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/2df3e19e-9ee4-42a6-a087-9761f82033f6/resource/15e2b847-d9c2-4523-bdc1-f22020da079e/download/covid-hospitalizations-data-dictionary.xlsx",
+          "title": "COVID-19 Hospitalizations by County data dictionary"
+        }
+      ],
+      "title": "COVID-19 Hospitalizations by County data dictionary"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "California Hospital Association"
+    }
+  ],
+  "temporal_coverage": "2020-present",
+  "title": "COVID-19 Hospital Data"
+}
